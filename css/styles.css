@@ -4,20 +4,43 @@
     --secondary: rgb(177, 15, 46);
     --dark: rgb(20, 0, 0);
     --light: rgb(128, 128, 128);
-    --
+    --rockLobsterFont: 'Lobster', cursive;
 }
-*{
+
+{
     margin: 0;
     padding: 0;
 }
-nav{
+
+nav {
     background-color: var(--primary);
     color: var(--light);
     height: 60px;
 }
-a:hoover{
+
+a:hover {
     color: inherit;
 }
-nav ul li > a#logo_title{
-    font-family: var(--zendot);
+
+nav ul li>a#logo_title {
+    font-family: 'Lobster', cursive;
+}
+
+.jumbotron {
+    background: url('https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center 64%;
+    background-size: cover;
+    height: 520px;
+    color: var(--secondary)
+}
+
+.jumbotron>a {
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: .85rem;
+    transition: all .8s
+}
+
+.jumbotron > a:hover {
+    background-color: var(--secondary);
+    color: var(--dark);
 }
