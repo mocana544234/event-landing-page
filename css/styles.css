@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 : root{
-    --primary: #570000;
-    --secondary: #B10F2E;
-    --dark: #140000;
-    --light: gray;
+    --primary: rgb(87, 0, 0);
+    --secondary: rgb(177, 15, 46);
+    --dark: rgb(20, 0, 0);
+    --light: rgb(128, 128, 128);
+    --
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: var(--primary);
+    color: var(--light);
+    height: 60px;
+}
+a:hoover{
+    color: inherit;
+}
+nav ul li > a#logo_title{
+    font-family: var(--zendot);
 }
