@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* GLOBAL STYLES */
 :root {
     --primary: rgb(153, 43, 26);
     --light: rgb(238, 231, 231);
@@ -6,41 +8,86 @@
     --secondary: rgb(242, 222, 220);
     --rockLobsterFont: 'Lobster', cursive;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
-nav {
+
+.primary_bg {
     background-color: var(--primary);
-    color: var(--light);
-    height: 60px;
 }
+
+.light_color {
+    color: var(--light);
+}
+
+.heading_font {
+    font-family: var(--rockLobsterFont);
+}
+
+/* COMMON STYLES */
+
+section#menu>h2,
+#advertisement span,
+footer i {
+    color: var(--primary);
+}
+
 a,
 a:hover {
     color: inherit;
 }
-nav ul li>a#logo_title {
-    font-family: 'Lobster', cursive;
+
+/* HEADER SECTION */
+
+nav {
+    height: 60px;
 }
+
 .jumbotron {
     background: url('https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center 64%;
     background-size: cover;
     height: 520px;
     color: var(--secondary)
 }
+
 .jumbotron>a {
     background-color: var(--dark);
-    color: var(--light);
     font-size: .85rem;
     transition: all .8s
 }
-.jumbotron > a:hover {
+
+.jumbotron>a:hover {
     background-color: var(--secondary);
     color: var(--dark);
 }
 
 /* MENU SECTION */
-section#menu > h2 {
-    font-family: var(--rockLobsterFont);
-    color: var(--primary);
-} 
+img[src="img/dessert.jpg"] {
+    height: 66.5%;
+}
+
+#advertisement {
+    height: 600px;
+    color: var(--dark);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background: url('../img/advertisement.png') 50% 80%no-repeat;
+    background-size: cover;
+}
+
+#advertisement .wrapper {
+    margin-top: -12rem;
+}
+
+/* FOOTER SECTION */
+
+footer #absolute_wrapper {
+    top: 2%;
+    left: 3%;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(242, 222, 220, 0.6);
+}
